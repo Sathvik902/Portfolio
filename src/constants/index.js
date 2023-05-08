@@ -258,7 +258,7 @@ import {
     {
       name: "ChatBot",
       description:
-        "This is a chatBot application built on python. It replies to the client to the required quiery.It uses RegEx in python.",
+        "This is a chatBot application built using python. It replies to the client to the required query.It uses RegEx in python.",
       tags: [
         {
           name: "Python",
