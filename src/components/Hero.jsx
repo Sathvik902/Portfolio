@@ -16,7 +16,7 @@ const Hero = () => {
           Student of Bangalore Institute of technology.</p>
           <br/>
           <br/>
-          <h6 className={`${styles.heroSubText} text-white`}>WebDev|Open Source|ML</h6>
+          <h6 className={`${styles.sectionSubSubText} text-white`}>WebDev | Open Source | ML</h6>
         </div>
       </div>
       
