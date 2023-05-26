@@ -47,20 +47,19 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          if(form.message === "" || form.email === "" || form.name === "" )
+          if(form.email === "" || form.name === "" || form.message === "")
           {
-            alert("Fill all the fields correctly!");
+            alert("Fill all the fields correctly.")
           }
           else{
-            if((form.email.includes("@")) && (form.includes(".")))
+            if(!(form.email.includes("@")) || !(form.email.includes(".")))
             {
-              alert("Thank you. I will get back to you as soon as possible.");
+              alert("Enter a valid email");
             }
             else{
-              alert("Enter a valid email address.")
-            } 
+              alert("Thank you. I will get back to you as soon as possible.");
+            }
           }
-          
 
           setForm({
             name: "",
@@ -111,7 +110,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email address?"
+              placeholder="What's your web address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
